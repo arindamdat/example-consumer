@@ -22,7 +22,7 @@ describe('API Pact test', () => {
   describe('retrieving a product', () => {
     test('ID 10 exists', async () => {
       // set up Pact interactions
-      const expectedProduct = { id: '10', type: 'CREDIT_CARD', name: '28 Degrees', version: '1.0', color: 'red' }
+      const expectedProduct = { id: '10', type: 'CREDIT_CARD', name: '28 Degrees', version: '1.0', color: 'red', seller: 'paradise', stock: 'yes' }
 
       await mockProvider.addInteraction({
         state: 'a product with ID 10 exists',
